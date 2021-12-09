@@ -8,7 +8,7 @@ os.environ["PATH"] = location + ";" + os.environ["PATH"]
 cx_Oracle.init_oracle_client(lib_dir="C:\instantclient_21_3")
 conn = cx_Oracle.connect("c##student/student@192.168.219.108:1521/xe")
 
-
+ 
 def intro():
     conn = cx_Oracle.connect("c##student/student@192.168.219.108:1521/xe")
     sql = "insert into covid values (null, null, null, null,null,null,null,null,null,null, null,sysdate);"
